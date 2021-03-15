@@ -723,4 +723,8 @@ catch
 finally
 {
     Write-Output -InputObject "Runbook: $RunbookName ended at time: $(get-Date -format r)"
+    if($AzureModuleFlavor -eq "Az")
+    {
+        Disable-AzureRmAlias
+    }
 }
