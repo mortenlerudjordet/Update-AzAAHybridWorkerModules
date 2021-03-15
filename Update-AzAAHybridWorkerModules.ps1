@@ -69,7 +69,6 @@ PREREQUISITES:
             AUTHOR:     Morten Lerudjordet & Automation Team
 #>
 #Requires -Version 5.0
-#Requires -Module Az.Accounts, Az.Automation
 Param(
     [bool]$UpdateAllHybridGroups = $false,
     [bool]$ForceInstallModule = $false,
